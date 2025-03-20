@@ -34,4 +34,7 @@ En este proyecto voy a poner en practica mis conocimientos dándoles a conocer a
 
 ---
 
->> _Sol González_
+>> _Sol González_  
+[Contáctame](https://github.com/Sunshine-8S)
+
+![purple-heart](./Assets/purple-heart.png)
