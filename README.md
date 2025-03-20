@@ -8,8 +8,8 @@ En este proyecto voy a poner en practica mis conocimientos dándoles a conocer a
     - Patinaje de carreras
 
 2. Mi __comida__ favorita
-    - Pollo de trufa mexicano de "Crepes & waffles"
-    - Ramen de "Aizu ramen"
+    - Pollo trufa mexicano de "Crepes & waffles"
+    - Ramen de "Aizu Ramen Izakaya"
     - Ajiaco de "mi mamita ♥"
 
  3. Mis __cantantes__ favoritos
@@ -21,6 +21,7 @@ En este proyecto voy a poner en practica mis conocimientos dándoles a conocer a
     - Abuelita
     - Perrito (Hermano)
     - Mi noviecito
+    - Tonny (Mascota)
 
 5. __Lugares__ que quiero conocer
     - Venecia, Italia
