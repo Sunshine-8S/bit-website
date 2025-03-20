@@ -34,4 +34,4 @@ En este proyecto voy a poner en practica mis conocimientos dándoles a conocer a
 
 ---
 
->> Sol González
+>> _Sol González_
