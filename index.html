@@ -3,37 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Acerca de mí</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&family=Merienda:wght@300..900&family=Quicksand:wght@300..700&family=Uchen&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./assets/purple-heart.png" type="image/x-icon" />
+    <title>Acerca de mí</title>
   </head>
 
   <body>
     <header>
-      <hr />
-      <nav>
-        <a href="#deportes">Deportes favoritos</a>
-        <a href="#comida">Comida favorita</a>
-        <a href="#cantantes">Cantantes favoritos</a>
-        <a href="./familia.html">Circulo familiar</a>
-        <a href="#lugares">Lugares que quiero conocer</a>
-        <a href="#proyectos">Proyectos</a>
-      </nav>
-      <hr />
-      <a href="./index.html"><img src="./assets/mi-moto.png" alt="En mi blackmoon" /></a>
+      <div class="menu">
+        <img class="blackmoon" src="./assets/mi-moto.png" alt="En mi blackmoon"/>
+        <nav class="nav">
+          <a class="a-nav" href="./familia.html">Circulo familiar</a>
+          <a class="a-nav" href="#deportes">Deportes</a>
+          <a class="a-nav" href="#comida">Comida</a>
+          <a class="a-nav" href="#cantantes">Cantantes</a>
+          <a class="a-nav" href="#lugares">Lugares que quiero conocer</a>
+          <a class="a-nav" href="#proyectos">Proyectos</a>
+        </nav>
+      </div>
     </header>
     <main>
-      <section id="Introduccion">
-        <h1>Acerca de mí</h1>
+      <section class="introduccion">
+        <h1 class="font-titulo">Acerca de mí</h1>
         <p>
-          En este proyecto voy a poner en practica mis conocimientos dándoles a conocer algunas cosas y actividades que me gustan, lo que me han enseñado las personas mas cercanas a mí y proyectos a
-          corto, mediano y largo plazo.
+          En este proyecto voy a poner en practica mis conocimientos sobre desarrollo web, dándoles a conocer algunas cosas y actividades que me gustan, lo que me han enseñado las personas mas cercanas a mí y proyectos a corto, mediano y largo plazo.
         </p>
       </section>
+
       <section id="deportes">
-        <h2>Deportes favoritos</h2>
+        <h2 class="font-subtitulo">Deportes favoritos</h2>
         <p>
           Desde muy pequeña he demostrado interés por el deporte. A los 6 años mis papás me inscribieron a una escuela de
-          <span style="font-weight: bold">patinaje</span> de carreras. Estuve practicando ese deporte por seis años; me apasionaba mucho, pero por cuestiones de dinero tuve que salirme. Es uno de mis
+          <span class="negrita">patinaje</span> de carreras. Estuve practicando ese deporte por seis años; me apasionaba mucho, pero por cuestiones de dinero tuve que salirme. Es uno de mis
           deportes favoritos porque fue el primero que practiqué y le tengo aprecio. En el colegio siempre me inscribía a los equipos de voleibol, baloncesto, fútbol y atletismo. Gané varias medallas
           de los partidos inter-cursos que realizaban y estuve en campeonatos de atletismo y voleibol intercolegiales a lo largo de mi etapa estudiantil, en donde conocí a otras personas apasionadas
           por el deporte.
@@ -43,91 +47,151 @@
           en los deportes que practicaba y también a ser más disciplinada en mis estudios.
         </p>
         <p>
-          El <span style="font-weight: bold">voleibol</span> es mi deporte favorito; me encanta jugarlo. Es un deporte de equipo, donde la comunicación y la coordinación son fundamentales para poder
+          El <span class="negrita">voleibol</span> es mi deporte favorito; me encanta jugarlo. Es un deporte de equipo, donde la comunicación y la coordinación son fundamentales para poder
           tener un buen juego. A mis 18 años me inscribí a un club de voleibol que se llama Fénix; el entrenador me ayudó a mejorar mi técnica de recepción, saque y ataque; también me enseñó a tener
           una actitud de liderazgo en la cancha y manejar mejor mis emociones.
         </p>
-        <img src="./assets/equipo-fenix.png" alt="Equipi de voleibol Fenix"> <br>
-        <video src="./assets/team-volley.mp4" controls></video>
+        <figure class="figure-fenix">
+          <img class="fenix" src="./assets/equipo-fenix.png" alt="Equipo de voleibol Fenix">
+          <figcaption class="figcaption">Equipo Fénix</figcaption>
+        </figure>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/bgDc5rYqlE4?si=nRP-tUT069--hwHC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </section>
 
       <section id="comida">
-        <h2>Comida favorita</h2>
+        <h2 class="center font-subtitulo">Comida favorita</h2>
         <p>
-          Me encanta comer, descubrir nuevos sabores y texturas. Tengo mi top de comidas favoritas: el <span style="font-weight: bold">crepe de pollo trufa mexicano</span> que sirven en "Crepes &Waffles"; el crepe es suavecito y delgado, la salsa que tiene el pollo es cremosa y tiene un sabor concentrado, pero no es hostigante. Lo acompañan con aguacate que hace que los sabores resalten un poco más.
+          Me encanta comer, descubrir nuevos sabores y texturas. Tengo mi top de comidas favoritas: el <span class="negrita">crepe de pollo trufa mexicano</span> que sirven en "Crepes &Waffles"; el crepe es suavecito y delgado, la salsa que tiene el pollo es cremosa y tiene un sabor concentrado, pero no es hostigante. Lo acompañan con aguacate que hace que los sabores resalten un poco más.
         </p>
+        <div class="div-ramen">
+          <img class="ramen" src="./assets/ramen.png" alt="Ramen de Aizu ramen Izakaya">
         <p>
-          El <span style="font-weight: bold">ramen</span> que sirven en "Aizu Ramen Izakaya", en especial el "Tokyo Karamiso Ramen". Es un ramen a base de miso picante (el picante se
+          El <span class="negrita">ramen</span> que sirven en "Aizu Ramen Izakaya", en especial el "Tokyo Karamiso Ramen". Es un ramen a base de miso picante (el picante se
           puede pedir aparte o ya en el caldo, pero en serio es muy muy muy picante). A mí me gusta pedirlo con el picante aparte. Viene con fideos artesanales y cerdo chashu; es blandito y jugoso.
           Viene con alga nori, cebolla larga, huevo sazonado en soya y espinaca.
         </p>
-        <img src="./assets/ramen.png" alt="Ramen de Aizu ramen Izakaya">
+        </div>
         <p>
-          Ell <span style="font-weight: bold">ajiaco</span> que hace mi mamita. La sopa es cremosa, tiene un sabor de varias cosas que se mezclan y hacen que sea una explosión de sabores
+          El <span class="negrita">ajiaco</span> que hace mi mamita. La sopa es cremosa, tiene un sabor de varias cosas que se mezclan y hacen que sea una explosión de sabores
           en la boca; como en "Ratatouille" cuando Remy prueba la fresa y el queso al mismo tiempo.
         </p>
-        <p>Receta para 4 personas</p>
-        <p>Ingredientes:</p>
-        <ul>
-          <li>2 litros de agua o más si es necesario</li>
-          <li>2 mazorcas</li>
-          <li>2 libras de arracacha</li>
-          <li>Cebolla larga al gusto</li>
-          <li>1 sobre de ricostilla</li>
-          <li>Sal al gusto</li>
-          <li>4 ajos triturados</li>
-          <li>1 libra de papa pastuza</li>
-          <li>1 libra de papa sabanera</li>
-          <li>1 libra de papa criolla</li>
-          <li>4 presas de pollo (Pierna pernil)</li>
-          <li>1 manojo de guascas</li>
-          <li>Crema de leche</li>
-        </ul>
-        <p>Procedimiento</p>
-        <ol>
-          <li>Poner a pitar la arracacha y la mazorca en una olla express, añadir medio sobre de ricostilla, un poquito de sal y cebolla al gusto.</li>
-          <li>En una olla aparte se pone la papa pastusa, la papa sabanera y el pollo, el ricostilla restante, cebolla al gusto, una pizca de sal y los 4 ajos triturados.</li>
-          <li>A los 10 minutos de que la olla express pite, se macera la arracacha y se saca la mazorca.</li>
-          <li>Se deja hervir la papa y el pollo durante 20 minutos y se saca el pollo para que no se deshaga.</li>
-          <li>Se pican las guascas y se echan en la olla con la arracacha, la mazorca y la papa criolla.</li>
-          <li>Si se necesita más agua o sal, le puedes echar al gusto.</li>
-          <li>Dejar hervir por 10 minutos más.</li>
-          <li>Proceder a emplatar y echar la crema de leche en cada plato.</li>
-        </ol>
+        <div class="titulo">
+          <p><span class="titulo-receta color-morado negrita">Receta para 4 personas</span></p>
+        </div>
+        <div class="receta">
+          <div class="ingredientes">
+            <p><span class="negrita cursiva">Ingredientes:</span></p>
+            <ul>
+              <li>2 litros de agua o más si es necesario</li>
+              <li>2 mazorcas</li>
+              <li>2 libras de arracacha</li>
+              <li>Cebolla larga al gusto</li>
+              <li>1 sobre de ricostilla</li>
+              <li>Sal al gusto</li>
+              <li>4 ajos triturados</li>
+              <li>1 libra de papa pastuza</li>
+              <li>1 libra de papa sabanera</li>
+              <li>1 libra de papa criolla</li>
+              <li>4 presas de pollo (Pierna pernil)</li>
+              <li>1 manojo de guascas</li>
+              <li>Crema de leche</li>
+            </ul>
+          </div>
+          <div class="procedimiento">
+            <p><span class="negrita cursiva">Procedimiento:</span></p>
+            <ol>
+              <li>Poner a pitar la arracacha y la mazorca en una olla express, añadir medio sobre de ricostilla, un poquito de sal y cebolla al gusto.</li>
+              <li>En una olla aparte se pone la papa pastusa, la papa sabanera y el pollo, el ricostilla restante, cebolla al gusto, una pizca de sal y los 4 ajos triturados.</li>
+              <li>A los 10 minutos de que la olla express pite, se macera la arracacha y se saca la mazorca.</li>
+              <li>Se deja hervir la papa y el pollo durante 20 minutos y se saca el pollo para que no se deshaga.</li>
+              <li>Se pican las guascas y se echan en la olla con la arracacha, la mazorca y la papa criolla.</li>
+              <li>Si se necesita más agua o sal, le puedes echar al gusto.</li>
+              <li>Dejar hervir por 10 minutos más.</li>
+              <li>Proceder a emplatar y echar la crema de leche en cada plato.</li>
+            </ol>
+          </div>
+        </div>
       </section>
 
       <section id="cantantes">
-        <h2>Cantantes favoritos</h2>
+        <h2 class="center font-subtitulo">Cantantes favoritos</h2>
         <p>
           Mis dos artistas cantantes y compositores favoritos son:
-          <span style="color: rgb(31, 31, 124)">Billie Eilish</span> y <span style="color: rgb(40, 180, 162)">Justin Bieber</span>. Billie tiene una voz versátil; puede cantar desde un tono muy bajo
-          hasta uno muy agudo. La letra de sus canciones es algo particular; el ritmo es diferente y pegajoso. Billie canta variedad de tipos de música, como pop, electropop, dark pop y emo pop, entre
-          otros. Mi canción favorita de su último álbum, "Hit Me Hard and Soft", es "Lunch".
+          <span class="cantantes-fav">Billie Eilish</span> y <span class="cantantes-fav">Justin Bieber</span>. Billie tiene una voz versátil; puede cantar desde un tono muy bajo hasta uno muy agudo. La letra de sus canciones es algo particular; el ritmo es diferente y pegajoso. Billie canta variedad de tipos de música, como pop, electropop, dark pop y emo pop, entre otros.
         </p>
+        <div class="video-billie">
+          <h3 class="color-morado font-video">All the good girls go to hell</h3>
+          <video class="video" src="" controls></video>
+          <p>
+            La canción "All the Good Girls Go to Hell" de Billie Eilish tiene un mensaje profundo y simbólico. A través de imágenes provocadoras y metáforas oscuras, aborda temas como el cambio climático y la negligencia humana hacia el medio ambiente. En la canción, Billie adopta un punto de vista imaginativo donde incluso los ángeles caen y el infierno se convierte en una metáfora de las consecuencias de nuestros actos.
+          </p>
+        </div>
         <p>
-          Justin Bieber es un artista que ha evolucionado mucho en su carrera musical. Tiene una voz muy dulce y melodiosa. La letra de sus canciones es romántica y yo amo el romance. Justin canta
-          pop, R&B y dance-pop, entre otros. La mayoría de las canciones que compuso cuando era un niño son muy movidas y alegres. Mi canción favorita de su último álbum, "Justice", es "Off my face".
+          Justin Bieber es un artista que ha evolucionado mucho en su carrera musical. Tiene una voz muy dulce y melodiosa. La letra de sus canciones es romántica y yo amo el romance. Justin canta pop, R&B y dance-pop, entre otros. La mayoría de las canciones que compuso cuando era un niño son muy movidas y alegres.
         </p>
+        <table class="table">
+          <caption>Canciones favoritas</caption>
+          <thead>
+            <tr>
+              <th>Álbum</th>
+              <th>Canción</th>
+              <th>Artista</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Hit Me Hard and Soft</td>
+              <td>Lunch</td>
+              <td>Billie Eilish</td>
+            </tr>
+            <tr>
+              <td>Don't smile at me</td>
+              <td>Hostage</td>
+              <td>Billie Eilish</td>
+            </tr>
+            <tr>
+              <td>Happier than ever</td>
+              <td>Oxytocin</td>
+              <td>Billie Eilish</td>
+            </tr>
+            <tr>
+              <td>Justice</td>
+              <td>Off my face</td>
+              <td>Justin Bieber</td>
+            </tr>
+            <tr>
+              <td>Purpose</td>
+              <td>Purpose</td>
+              <td>Justin Bieber</td>
+            </tr>
+            <tr>
+              <td>Journals</td>
+              <td>All that matters</td>
+              <td>Justin Bieber</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
-
+      
       <section id="lugares">
-        <h2>Lugares que quiero conocer</h2>
-        <p>Yo quiero conocer el mundo entero, conocer nuevas culturas, comer cosas diferentesy ver paisajes hermosos. Hay tres paises que quiero visitar con mas ganas; Italia, Tokyo y Suecia.</p>
+        <h2 class="center font-subtitulo">Lugares que quiero conocer</h2> 
+        <p>
+          Yo quiero conocer el mundo entero, conocer nuevas culturas, comer cosas diferentesy ver paisajes hermosos. Hay tres paises que quiero visitar con mas ganas; Italia, Tokyo y Suecia.
+        </p>
         <dl>
-          <dt><span style="font-weight: bold">Italia</span></dt> 
+          <dt><span class="color-morado negrita">Italia</span></dt> 
           <dd>Es un país que me llama mucho la atención por su historia, su arquitectura y su comida. Me gustaría visitar Venecia, por su arte, lagunas y el laberinto de puentes y canales.</dd>
           
-          <dt><span style="font-weight: bold">Japon</span></dt>
+          <dt><span class="color-morado negrita">Japon</span></dt>
           <dd>Es un pais que me llama mucho la atención por su cultura, su tecnología y su comida. Me gustaría visitar Tokyo, para conocer los templos tradicionales, los jardines japoneses y la torre de Tokyo.</dd> 
           
-          <dt><span style="font-weight: bold">Suecia</span></dt>
+          <dt><span class="color-morado negrita">Suecia</span></dt>
           <dd>Es un país que me llama mucho la atención por su arquitectura. Me gustaría visitar Abisko, para ver la aurora boreal, el parque nacional de Abisko y el lago Torneträsk.</dd> 
-          
         </dl>
       </section>
 
       <section id="proyectos">
-        <h2>Proyectos</h2>
+        <h2 class="center font-subtitulo">Proyectos</h2>
         <p>
           Algunos de mis proyectos están relacionados con esta página web; quiero aprender mucho de este bootcamp que estoy haciendo en
           <a href="https://bitinstitute.online/" target="_blank" rel="noopener noreferrer">BIT</a>, poder hacer una página web desde cero con estilos y funcionalidades. Quiero trabajar como freelancer
@@ -139,21 +203,28 @@
     </main>
 
     <aside>
-      <a href="https://github.com/Sunshine-8S" target="_blank" rel="noopener noreferrer">
-        <img src="./assets/github-logo.png" alt="GitHub logo" /></a>
-        <form >
-          <label for="name">Nombre</label>
-          <input type="text" id="name">
+      <h4 class="font-subtitulo">Contáctame</h4>
+        <form class="form">
+          <label for="nombre">Nombre</label>
+          <br>
+          <input type="text" id="nombre">
+          <br>
           <label for="email">Correo</label>
+          <br>
           <input type="email" id="email">
-          <label for="message">Mensaje</label>
-          <textarea name="" id="message" placeholder="Coloca tu mensaje"></textarea>
-          <button type="submit">Enviar</button>
+          <br>
+          <label for="mensaje">Mensaje</label>
+          <br>
+          <textarea id="mensaje" placeholder="Coloca tu mensaje"></textarea>
+          <br>
+          <button class="boton" type="submit">Enviar</button>
         </form>
+        <a href="https://github.com/Sunshine-8S" target="_blank" rel="noopener noreferrer">
+          <img class="github" src="./assets/github-logo.png" alt="GitHub logo" /></a>
     </aside>
-
+    
     <footer>
-      <blockquote>"El trabajo duro, vence al talento natural"</blockquote>
+      <blockquote>"El trabajo duro, derrota al talento natural"</blockquote>
       <p>Sol González</p>
     </footer>
   </body>
