@@ -42,6 +42,9 @@ header, footer {
     color: #AA60C8;
 }
 
+.audio-papito, .github{
+    float: left;
+}
 
 /* Header */
 
@@ -67,7 +70,7 @@ header {
 }
 
 .familia, .novio {
-    border: double #AA60C8;
+    border: double #A594F9;
     border-radius: 50%;
     box-shadow: 0 4px 6px black;
 }
@@ -81,10 +84,16 @@ main {
 
 .circulo-familiar {
     width: 50%;
-    border: double 5px #AA60C8;
+    border: double 5px #A594F9;
     margin: 100px auto;
     padding: 20px;
     border-radius: 50% 20% 50% 20% / 20% 50% 20% 50%;
+}
+
+.audio-papito {
+    width: 250px;
+    border: 5px double #A594F9;
+    margin-right: 20px;
 }
 
 /* Aside */
@@ -106,7 +115,7 @@ aside {
 .galeria {
     flex-wrap: wrap;
     margin-top: 50px;
-    gap: 20px;
+    gap: 30px;
     justify-content: center;
 }
 
@@ -129,5 +138,4 @@ footer {
     width: 100px;
     border-radius: 20px;
     box-shadow: 0 4px 6px black;
-    float: left;
 }
