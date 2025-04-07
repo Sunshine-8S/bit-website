@@ -1,0 +1,133 @@
+/* Generales  */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    flex-wrap: wrap;
+    background-color: #F5EFFF;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+}
+
+body, header, footer, .container, .galeria, .font-sub-aside{
+    display: flex;
+    justify-content: center;
+}
+
+header, footer {
+    width: 100%;
+}
+
+.container, footer, .titulo-aside {
+    align-items: center;
+}
+
+.color-titulo {
+    color: #AA60C8;
+}
+
+.font-subtitulo {
+    font-family: "Uchen", serif;
+    font-weight: bolder;
+    font-size: xx-large;
+    margin-top: 50px;
+}
+
+.color-morado {
+    color: #AA60C8;
+}
+
+
+/* Header */
+
+header {
+    padding: 20px;
+    background: linear-gradient(#A594F9, #F5EFFF);
+}
+
+.familia {
+    width: 150px;
+    margin-right: 50px;
+}
+
+.font-titulo {
+    font-family: "Bevan", serif;
+    font-weight: 400;
+    font-size: xx-large;
+}
+
+.novio {
+    height: 155px;
+    margin-left: 50px;
+}
+
+.familia, .novio {
+    border: double #AA60C8;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px black;
+}
+
+/* Main */
+
+main {
+    width: 75%;
+    padding: 30px 100px;
+}
+
+.circulo-familiar {
+    width: 50%;
+    border: double 5px #AA60C8;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 50% 20% 50% 20% / 20% 50% 20% 50%;
+}
+
+/* Aside */
+
+aside {
+    width: 25%;
+}
+
+.font-sub-aside {
+    font-family: "Merienda", cursive;
+    font-optical-sizing: auto;
+}
+
+.titulo-aside {
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+.galeria {
+    flex-wrap: wrap;
+    margin-top: 50px;
+    gap: 20px;
+    justify-content: center;
+}
+
+.medida {
+    width: 60%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px black;
+}
+
+/* Footer */
+
+footer {
+    background: linear-gradient(#F5EFFF,#A594F9);
+    height: 150px;
+    flex-wrap: wrap;
+}
+
+.github {
+    width: 100px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px black;
+    float: left;
+}

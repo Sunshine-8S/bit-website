@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+body {
+    height: 100%;
+    margin: 0;
+    background-color: #F5EFFF;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+}
+
 header, body, footer, .menu, .nav, .div-ramen, #deportes, #lugares, #proyectos, .receta, .ingredientes, .procedimiento, .form, .github, .galeria {
     display: flex;
 }
@@ -12,21 +21,8 @@ header, footer {
     width: 100%;
 }
 
-aside, .nav, .div-ramen {
+aside, .nav, .div-ramen, footer {
     align-items: center;
-}
-
-.font-subtitulo, .font-titulo {
-    font-size: xx-large;
-}
-
-body {
-    height: 100%;
-    margin: 0;
-    background-color: #F5EFFF;
-    font-family: "Quicksand", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 450;
 }
 
 body, #deportes, #lugares, #proyectos, .galeria {
@@ -41,7 +37,7 @@ h1 {
     text-align: center;
 }
 
-#deportes, #lugares, #proyectos {
+#deportes, #lugares, #proyectos, header, .galeria, footer {
     justify-content: center;
 }
 
@@ -55,8 +51,16 @@ h1 {
     font-weight: bolder;
 }
 
+.font-subtitulo, .font-titulo {
+    font-size: xx-large;
+}
+
 .color-titulo{
     color: #AA60C8;
+}
+
+.color-morado {
+    color: #B983FF;
 }
 
 .negrita, .table caption, .table th {
@@ -81,11 +85,7 @@ h1 {
     text-align: center;
 }
 
-.color-morado {
-    color: #B983FF;
-}
-
-.receta, .video-billie, .table, .boton, .github {
+.receta, .video-billie, .table, .boton {
     background-color: #E5D9F2;
 }
 
@@ -97,7 +97,6 @@ h1 {
 
 header {
     background: linear-gradient(#A594F9,#F5EFFF);
-    justify-content: center;
 }
 
 .menu {
@@ -227,7 +226,6 @@ aside {
 .galeria {
     margin-top: 50px;
     gap: 20px;
-    justify-content: center;
 }
 
 .medida {
@@ -260,9 +258,9 @@ aside {
 }
 
 .github {
-    width: 25%;
-    border-radius: 8px;
-    border: 2px solid black;
+    width: 100px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px black;
     float: left;
     margin: 80px 50px;
 }
@@ -270,10 +268,7 @@ aside {
 /* Footer */
 
 footer {
-    border: solid;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background: linear-gradient(#F5EFFF, #A594F9);
     height: 150px;
 }
