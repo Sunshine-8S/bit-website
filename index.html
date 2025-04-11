@@ -25,6 +25,7 @@
         </nav>
       </div>
     </header>
+    
     <main>
       <section class="introduccion">
         <h1 class="color-titulo font-titulo">Acerca de mí</h1>
@@ -222,15 +223,18 @@
         <img class="github" src="./assets/github-logo.png" alt="GitHub logo" /></a>
         <form class="form">
           <label class="color-morado" for="nombre">Nombre</label>
-          <input type="text" id="nombre">
+          <input type="text" id="nombre" placeholder="Nombre completo">
           <br>
-          <label class="color-morado" for="email">Correo</label>
-          <input type="email" id="email">
+          <label class="color-morado" for="email" placeholder="Correo electrónico" required>Correo</label>
+          <input type="email" id="email" placeholder="Correo electrónico" required>
           <br>
-          <label class="color-morado" for="mensaje">Mensaje</label>
-          <textarea id="mensaje" placeholder="Coloca tu mensaje"></textarea>
+          <label class="color-morado" for="celular">Celular</label>
+          <input type="number" id="celular" placeholder="Número de celular">
           <br>
-          <button class="boton" type="submit">Enviar</button>
+          <label  class="color-morado" for="hora">¿A qué hora te puedo contactar?</label>
+          <input type="time" id="hora">
+          <br>
+          <input class="boton" type="submit" value="send">
         </form>
       </div>
     </aside>

@@ -1,26 +1,36 @@
 /* Generales  */
 
+:root {
+    --color-header: linear-gradient(#A594F9, #F5EFFF);
+    --color-footer: linear-gradient(#F5EFFF, #A594F9);
+    --color-primario: #A594F9;
+    --color-secundario: #F5EFFF;
+    --color-terciario: #AA60C8;
+    --color-negro: black;
+}
+
 * {
     box-sizing: border-box;
-}
+} 
 
 body {
     height: 100%;
     margin: 0;
-    flex-wrap: wrap;
-    background-color: #F5EFFF;
+    background-color: var(--color-secundario);
     font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
     font-weight: 450;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-areas: 
+    "header header"
+    "main aside"
+    "footer footer";
 }
 
-body, header, footer, .container, .galeria, .font-sub-aside{
+header, footer, .container, .galeria, .font-sub-aside{
     display: flex;
     justify-content: center;
-}
-
-header, footer {
-    width: 100%;
 }
 
 .container, footer, .titulo-aside {
@@ -28,7 +38,7 @@ header, footer {
 }
 
 .color-titulo {
-    color: #AA60C8;
+    color: var(--color-terciario);
 }
 
 .font-subtitulo {
@@ -39,7 +49,7 @@ header, footer {
 }
 
 .color-morado {
-    color: #AA60C8;
+    color: var(--color-terciario);
 }
 
 .audio-papito, .github{
@@ -49,8 +59,9 @@ header, footer {
 /* Header */
 
 header {
+    grid-area: header;
     padding: 20px;
-    background: linear-gradient(#A594F9, #F5EFFF);
+    background: var(--color-header);
 }
 
 .familia {
@@ -70,21 +81,21 @@ header {
 }
 
 .familia, .novio {
-    border: double #A594F9;
+    border: double var(--color-primario);
     border-radius: 50%;
-    box-shadow: 0 4px 6px black;
+    box-shadow: 0 4px 6px var(--color-negro);
 }
 
 /* Main */
 
 main {
-    width: 75%;
+    grid-area: main;
     padding: 30px 100px;
 }
 
 .circulo-familiar {
     width: 50%;
-    border: double 5px #A594F9;
+    border: double 5px var(--color-primario);
     margin: 100px auto;
     padding: 20px;
     border-radius: 50% 20% 50% 20% / 20% 50% 20% 50%;
@@ -92,14 +103,14 @@ main {
 
 .audio-papito {
     width: 250px;
-    border: 5px double #A594F9;
+    border: 5px double var(--color-primario);
     margin-right: 20px;
 }
 
 /* Aside */
 
 aside {
-    width: 25%;
+    grid-area: aside;
 }
 
 .font-sub-aside {
@@ -123,14 +134,14 @@ aside {
     width: 60%;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 4px 6px black;
+    box-shadow: 0 4px 6px var(--color-negro);
 }
 
 /* Footer */
 
 footer {
-    background: linear-gradient(#F5EFFF,#A594F9);
-    height: 150px;
+    grid-area: footer;
+    background: var(--color-footer);
     flex-wrap: wrap;
     margin-top: 30px;
 }
@@ -138,5 +149,5 @@ footer {
 .github {
     width: 100px;
     border-radius: 20px;
-    box-shadow: 0 4px 6px black;
+    box-shadow: 0 4px 6px var(--color-negro);
 }
