@@ -38,4 +38,4 @@ En este proyecto voy a poner en practica mis conocimientos dándoles a conocer a
 >> _Sol González_  
 [Contáctame](https://www.linkedin.com/in/sol-gonz%C3%A1lez-b5134826b/)
 
-![purple-heart](./Assets/purple-heart.png)
+![heart](./assets/corazon-readme.png)
