@@ -91,6 +91,10 @@ footer {
     font-family: var(--fuente-titulo);
 }
 
+.familia {
+    border: groove var(--color-terciario);
+}
+
 /* Main */
 
 .circulo-familiar {
