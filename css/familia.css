@@ -1,153 +1,270 @@
-/* Generales  */
+/* Variables */
 
 :root {
     --color-header: linear-gradient(#A594F9, #F5EFFF);
     --color-footer: linear-gradient(#F5EFFF, #A594F9);
-    --color-primario: #A594F9;
-    --color-secundario: #F5EFFF;
-    --color-terciario: #AA60C8;
+    --color-body: #F5EFFF;
+    --color-primario: #AA60C8;
+    --color-secundario: #E5D9F2;
+    --color-terciario: #CDC1FF;
     --color-negro: black;
+    --fuente-titulo: "Bevan", serif;
+    --fuente-subtitulo: "Uchen", serif;
+    --fuente-secundarios: "Merienda", cursive;
 }
 
-* {
+/* GRUPOS */
+
+header, .galeria, footer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.familia-foto, .novio-foto {
+    width: 110px;
+    height: 110px;
+    margin: 5px;
+}
+
+.familia, .novio {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px var(--color-negro)
+}
+
+.color-titulo, .color-subtitulo {
+    color: var(--color-primario);
+}
+
+.mamita, .abuelita, .perrito, .papito, .harley, .pao, .tonny, .noviecito {
+    margin-bottom: 40px;
+}
+
+/* Etiquetas */
+
+* , *::before, *::after {
     box-sizing: border-box;
-} 
+}
+
+html {
+    font-size: 62.5%;
+}
 
 body {
-    height: 100%;
     margin: 0;
-    background-color: var(--color-secundario);
+    background-color: var(--color-body); 
     font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
     font-weight: 450;
-    display: grid;
-    grid-template-columns: 75% 25%;
-    grid-template-areas: 
-    "header header"
-    "main aside"
-    "footer footer";
 }
 
-header, footer, .container, .galeria, .font-sub-aside{
-    display: flex;
-    justify-content: center;
-}
-
-.container, footer, .titulo-aside {
+header {
+    background: var(--color-header);
     align-items: center;
+    justify-content: center;
+    padding: 10px;
 }
 
-.color-titulo {
-    color: var(--color-terciario);
+main {
+    padding: 15px;
 }
 
-.font-subtitulo {
-    font-family: "Uchen", serif;
-    font-weight: bolder;
-    font-size: xx-large;
-    margin-top: 50px;
-}
-
-.color-morado {
-    color: var(--color-terciario);
-}
-
-.audio-papito, .github{
-    float: left;
+footer {
+    background: var(--color-footer);
+    margin-top: 100px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
 }
 
 /* Header */
 
-header {
-    grid-area: header;
-    padding: 20px;
-    background: var(--color-header);
-}
-
-.familia {
-    width: 150px;
-    margin-right: 50px;
-}
-
 .font-titulo {
-    font-family: "Bevan", serif;
-    font-weight: 400;
-    font-size: xx-large;
-}
-
-.novio {
-    height: 155px;
-    margin-left: 50px;
-}
-
-.familia, .novio {
-    border: double var(--color-primario);
-    border-radius: 50%;
-    box-shadow: 0 4px 6px var(--color-negro);
+    font-size: 16px;
+    font-family: var(--fuente-titulo);
 }
 
 /* Main */
 
-main {
-    grid-area: main;
-    padding: 30px 100px;
+.circulo-familiar {
+    border-radius: 85% 5% 85% 5% / 5% 85% 5% 85%;
+    border: double var(--color-terciario);
+    width: 70%;
+    margin: 40px auto;
+    padding: 8px;
 }
 
-.circulo-familiar {
-    width: 50%;
-    border: double 5px var(--color-primario);
-    margin: 100px auto;
-    padding: 20px;
-    border-radius: 50% 20% 50% 20% / 20% 50% 20% 50%;
+.font-subtitulo {
+    font-family: var(--fuente-subtitulo);
+}
+
+.audio {
+    width: 150px;
 }
 
 .audio-papito {
-    width: 250px;
-    border: 5px double var(--color-primario);
-    margin-right: 20px;
+    float: left;
+    width: 100%;
+    margin-right: 15px;
+    background-color: var(--color-secundario);
+    border: 5px double var(--color-terciario);
 }
 
 /* Aside */
 
-aside {
-    grid-area: aside;
-}
-
 .font-sub-aside {
-    font-family: "Merienda", cursive;
-    font-optical-sizing: auto;
-}
-
-.titulo-aside {
-    margin-left: 20px;
-    font-size: 30px;
+    font-family: var(--fuente-secundarios);
+    font-size: 20px;
+    text-align: center;
 }
 
 .galeria {
-    flex-wrap: wrap;
-    margin-top: 50px;
-    gap: 30px;
     justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 45px;
+    margin-bottom: 45px;
 }
 
-.medida {
-    width: 60%;
-    height: auto;
+.medida-galeria {
+    width: 100%;
     border-radius: 10px;
     box-shadow: 0 4px 6px var(--color-negro);
 }
 
-/* Footer */
-
-footer {
-    grid-area: footer;
-    background: var(--color-footer);
-    flex-wrap: wrap;
-    margin-top: 30px;
+.contenedor-galeria {
+    width: 150px;
 }
 
+/* Footer */
+
 .github {
-    width: 100px;
-    border-radius: 20px;
+    width: 50px;
+    border-radius: 10px;
     box-shadow: 0 4px 6px var(--color-negro);
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 768px) {
+
+    /* Grupos */
+
+    main, aside {
+        width: 75%;
+        margin: auto;
+    }
+
+    /* Etiquetas */
+
+    html {
+        font-size: 80%;
+    }
+    
+    main {
+        padding: 0;
+    }
+
+    /* Header */
+
+    .font-titulo {
+        font-size: 25px;
+    }
+
+    .familia-foto, .novio-foto {
+        width: 150px;
+        height: 150px;
+        margin: 25px;
+    }
+
+    /* Main */
+
+    .circulo-familiar {
+        width: 50%;
+        margin: 60px auto;
+    }
+
+    .audio {
+        width: 200px;
+    }
+
+    .noviecito {
+        margin-bottom: 100px;
+    }
+
+    /* Aside */
+
+    .contenedor-galeria {
+        width: 170px;
+    }
+
+    /* Footer */
+
+    .github {
+        width: 90px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    /* Grupos */
+
+    main, aside, footer {
+        margin: 0;
+    }
+
+    main, aside {
+        width: auto;
+    }
+
+    /* Etiquetas */
+
+    body {
+        display: grid;
+        grid-template-columns: 75% 25%;
+        grid-template-areas: 
+            "header header"
+            "main aside"
+            "footer footer";
+    }
+
+    header {
+        grid-area: header;
+    }
+
+    main {
+        grid-area: main;
+        padding-left: 50px;
+    }
+
+    aside {
+        grid-area: aside;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
+    /* Main */
+
+    .circulo-familiar {
+        margin: 30px auto;
+    }
+
+    .noviecito {
+        margin-bottom: 50px;
+    }
+
+    /* Aside */
+
+    .galeria {
+        flex-direction: column;
+    }
+
+    .contenedor-galeria {
+        width: 200px;
+    }
 }
