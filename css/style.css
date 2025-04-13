@@ -321,6 +321,11 @@ th, td {
         width: 190px;
     }
 
+    .volley {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
     /* S-comida */
 
     .receta {
@@ -409,13 +414,6 @@ th, td {
     }
 
     /* Main */
-
-    /* Deportes */
-
-    .volley {
-        display: flex;
-        justify-content: space-evenly;
-    }
 
     /* S-comida */
 
