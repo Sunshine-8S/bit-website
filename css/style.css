@@ -222,7 +222,6 @@ th, td {
 
 .galeria {
     column-count: 2; /* Cambia el número según ancho de pantalla */
-    padding-left: 60px;
 }
 
 .medida-fotos {
