@@ -51,7 +51,9 @@ section {
 }
 
 iframe {
-    margin-top: 10px;
+    display: inline;
+    margin-left: 25px;
+    margin-top: 20px;
     border: groove;
 }
 
@@ -110,7 +112,7 @@ header, .cursiva {
     align-items: center;
 }
 
-.font-titulo, h2, figure, .contenedor-iframe, .font-video, .contactame, .titulo {
+.font-titulo, h2, figure, .font-video, .contactame, .titulo {
     text-align: center;
 }
 
@@ -292,6 +294,10 @@ th, td {
         float: left;
     }
 
+    iframe {
+        margin-top: 20px;
+    }
+
     footer {
         height: 150px;
     }
@@ -313,10 +319,6 @@ th, td {
 
     .fenix {
         width: 190px;
-    }
-
-    .contenedor-iframe {
-        margin-top: 20px;
     }
 
     /* S-comida */
