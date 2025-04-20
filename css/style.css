@@ -266,6 +266,8 @@ th, td {
     width: 100px;
     display: block;
     margin-bottom: 8px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px var(--color-negro);
 }
 
 /* Media Queries */
